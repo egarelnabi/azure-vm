@@ -19,7 +19,7 @@ variable "admin_password" {
 module "windowsserver" {
   source              = "Azure/compute/azurerm"
 #  version             = "1.1.5"
-  version             = "1.3.0"
+  version             = "1.2.1"
   location            = "${var.location}"
   resource_group_name = "${var.windows_dns_prefix}-rc"
   vm_hostname         = "pwc-ptfe"
